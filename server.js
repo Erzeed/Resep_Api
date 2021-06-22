@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 
 //router
 const router = require('./router');
-app.use(router);
+router(app);
 //server
 const port = process.env.PORT || 3000;
 
