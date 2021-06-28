@@ -21,7 +21,7 @@ app.use(function(req, res, next) {
 app.get('/', (req, res) => {
     res.send({
         status:200,
-        results:'haii'
+        results:'haii -_-'
     });
 });
 
