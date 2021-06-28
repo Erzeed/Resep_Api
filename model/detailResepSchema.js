@@ -6,6 +6,10 @@ var detailResep = new mongoose.Schema({
         type:String,
         required:true,
     },
+    linkyoutube: {
+        type:String,
+        required:true,
+    },    
     title:{
         type:String,
         required:true,

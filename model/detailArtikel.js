@@ -1,43 +1,34 @@
 const mongoose = require('mongoose'); // Erase if already required
 
 // Declare the Schema of the Mongo model
-var resep = new mongoose.Schema({
+var detailArtikel = new mongoose.Schema({
     title:{
         type:String,
         required:true,
     },
-    like:{
-        type:Boolean,
+    key: {
+        type:String,
         required:true,
     },
     thumb:{
         type:String,
         required:true,
+        unique:true,
     },
-    key:{
+    author:{
+        type:String,
+        required:true,
+        unique:true,
+    },
+    date_published:{
         type:String,
         required:true,
     },
-    times:{
+    description:{
         type:String,
         required:true,
     },
-    serving:{
-        type:String,
-        required:true,
-    },
-    difficulty:{
-        type:String,
-        required:true,
-    },
-});
-
-resep.index({
-    title:'text',
-    description:'text'
 });
 
 //Export the model
-module.exports = mongoose.model('dataResep', resep);
-
-
+module.exports = mongoose.model('detailArtikel', detailArtikel);
