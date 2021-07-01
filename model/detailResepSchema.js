@@ -9,7 +9,11 @@ var detailResep = new mongoose.Schema({
     linkyoutube: {
         type:String,
         required:true,
-    },    
+    },
+    origin: {
+        type:String,
+        required:true,
+    },     
     title:{
         type:String,
         required:true,
