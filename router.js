@@ -25,6 +25,6 @@ module.exports = function (app) {
     app.use('/searchDetailFoodInformation',data.searchDetailFoodInformation);
     app.use('/postTrendFood',data.postTrendFood);
     app.use('/getTrendFood',data.getTrendFood);
-    app.use('/getArtikelByKey',data.getTrendFood);
+    app.use('/getArtikelByKey',data.getArtikelDetailByKey);
     // app.use('/',hah);
 };
