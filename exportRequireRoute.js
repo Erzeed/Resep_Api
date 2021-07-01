@@ -23,6 +23,7 @@ let data = {
     searchDetailFoodInformation : require('./controller/searchDetailFoodInformation'),
     postTrendFood : require('./controller/postTrendFood'),
     getTrendFood : require('./controller/getFoodTrend'),
+    getArtikelDetailByKey : require('./controller/getArtikelByKey'),
     // hah: require('./view/hah'),
 };
 
