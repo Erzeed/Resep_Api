@@ -24,6 +24,7 @@ let data = {
     postTrendFood : require('./controller/postTrendFood'),
     getTrendFood : require('./controller/getFoodTrend'),
     getArtikelDetailByKey : require('./controller/getArtikelByKey'),
+    searchArtikel : require('./controller/searchArtikel'),
     // hah: require('./view/hah'),
 };
 

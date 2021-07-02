@@ -16,5 +16,9 @@ var artikel = new mongoose.Schema({
     }
 });
 
+artikel.index({
+    title : "text"
+});
+
 //Export the model
 module.exports = mongoose.model('artikel', artikel);
