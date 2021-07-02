@@ -25,6 +25,10 @@ var detailArtikel = new mongoose.Schema({
         required:true,
     },
     description:{
+        type:String,
+        required:true,
+    },
+    content:{
         type:Array,
         required:true,
     },
