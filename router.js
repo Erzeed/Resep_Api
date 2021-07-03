@@ -28,5 +28,6 @@ module.exports = function (app) {
     app.use('/getArtikelByKey',data.getArtikelDetailByKey);
     app.use('/searchArtikel',data.searchArtikel);
     app.use('/userById',data.getUserById);
+    app.use('/getResepByKey',data.getResepByKey);
     // app.use('/',hah);
 };

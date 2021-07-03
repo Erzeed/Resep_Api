@@ -26,6 +26,7 @@ let data = {
     getArtikelDetailByKey : require('./controller/getArtikelByKey'),
     searchArtikel : require('./controller/searchArtikel'),
     getUserById : require('./controller/getDataUserById'),
+    getResepByKey : require('./controller/getResepByKey'),
     // hah: require('./view/hah'),
 };
 
