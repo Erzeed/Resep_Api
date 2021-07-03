@@ -13,6 +13,14 @@ var artikel = new mongoose.Schema({
     key:{
         type:String,
         required:true,
+    },
+    author:{
+        type:String,
+        required:true,
+    },
+    date_published:{
+        type:String,
+        required:true,
     }
 });
 
