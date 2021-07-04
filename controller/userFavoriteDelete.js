@@ -7,10 +7,12 @@ const resp = require('../respond');
 //ambil schema dataResep
 const dataUser = require('../model/user');
 
-router.patch('/:id',async (req, res) => {
+router.patch('/',async (req, res) => {
 
     try {
-        const newData = await dataUser.findByIdAndUpdate(req.params.id,{$pull:req.body});
+        const newData = await dataUser.findByIdAndUpdate(
+            req.body.id,
+            {$pull:{favorit:req.body.key}});
         if(!newData) throw error('gagal');
         resp.ok('data berhasil dihapus',res);
     } catch (error) {
